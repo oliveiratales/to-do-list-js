@@ -160,7 +160,7 @@ input, select {
 
 .todo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
@@ -187,6 +187,49 @@ input, select {
    }
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1 {
+        font-size: 1.1rem;       
+    }
+    
+    #todo-form p, #edit-form p {
+        font-size: 0.8rem;
+    }
+
+    input {
+        font-size: 0.7rem;
+    }
+
+    #toolbar h4 {
+        font-size: 0.8rem;
+    }
+
+    #filter select {
+        flex: 1;
+        font-size: 0.7rem;
+    }
+
+    button {
+        background-color: #FDFDFD;
+        color: #102F5e;
+        border: 2px solid #102F5e;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+    .todo h3 {
+        flex: 1;
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+
+  }
 
 
 
